@@ -4,165 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/x-icon" href="https://DreamyCecil.github.io/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="https://DreamyCecil.github.io/style.css">
   <title>Other Media</title>
-  
-  <style type = "text/css">
-  
-    /* Main */
-    body {
-      background-color: black;
-      background-image: url("https://i.imgur.com/fA6t7ts.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: center;
-      font-family: Segoe WP SemiLight, sans-serif;
-      color: white;
-    }
-    h1 {
-      font-family: Segoe UI, sans-serif;
-    }
-    
-    /* Links */
-    a:link {
-      color: #BBD1EB; background-color: transparent; text-decoration: none;
-    }
-    a:visited {
-      color: #BBD1EB; background-color: transparent; text-decoration: none;
-    }
-    a:hover {
-      color: #D2E1F2; background-color: transparent; text-decoration: none;
-    }
-    a:active {
-      color: white; background-color: transparent; text-decoration: none;
-    }
-    
-    .siteSeparator {
-      width: 840px;
-      margin: auto;
-      margin-top: 8px;
-      margin-bottom: 8px;
-      opacity: 0.5;
-    }
-    .siteBlock {
-      border: 1px solid #BBD1EB;
-      padding: 12px;
-      position: relative;
-      top: 16px;
-      width: 800px;
-      margin: auto;
-      margin-top: 8px;
-      margin-bottom: 8px;
-      text-align: justify;
-      font-family: Segoe WP SemiLight, sans-serif;
-    }
-    
-    /* Main Page dropdown menu */
-    .mainBut {
-      background-image: linear-gradient(#D2E1F2, #BBD1EB);
-      color: black; padding: 16px; font-size: 16px; min-width: 160px; border: none;
-      font-family: Consolas, monospace;
-      cursor: pointer;
-    }
-    .mainDrop { position: relative; display: inline-block; }
-    /* Hovering */
-    .mainDrop:hover .mainBut { background-image: linear-gradient(#DAE9FA, #C3D9F3); }
-    
-    /* Serious Sam dropdown menu */
-    .samBut {
-      background-image: linear-gradient(#D2E1F2, #BBD1EB);
-      color: black; padding: 16px; font-size: 16px; min-width: 160px; border: none;
-      font-family: Consolas, monospace;
-    }
-    .samDrop { position: relative; display: inline-block; }
-
-    .sam-content {
-      display: none; position: absolute;
-      background-color: #EEEEEE;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-    .sam-content a { color: black; padding: 12px 16px; display: block; text-decoration: none; }
-    /* Hovering */
-    .sam-content a:hover { background-color: #DDDDDD; }
-    .samDrop:hover .sam-content { display: block; }
-    .samDrop:hover .samBut { background-image: linear-gradient(#DAE9FA, #C3D9F3); }
-    
-    /* Other Projects dropdown menu */
-    .projBut {
-      background-image: linear-gradient(#D2E1F2, #BBD1EB);
-      color: black; padding: 16px; font-size: 16px; min-width: 160px; border: none;
-      font-family: Consolas, monospace;
-    }
-    .projDrop { position: relative; display: inline-block; }
-
-    .proj-content {
-      display: none; position: absolute;
-      background-color: #EEEEEE;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-    .proj-content a { color: black; padding: 12px 16px; display: block; text-decoration: none; }
-    /* Hovering */
-    .proj-content a:hover { background-color: #DDDDDD; }
-    .projDrop:hover .proj-content { display: block; }
-    .projDrop:hover .projBut { background-image: linear-gradient(#DAE9FA, #C3D9F3); }
-    
-    /* Digital Media dropdown menu */
-    .mediaBut {
-      background-image: linear-gradient(#D2E1F2, #BBD1EB);
-      color: black; padding: 16px; font-size: 16px; min-width: 160px; border: none;
-      font-family: Consolas, monospace;
-    }
-    .mediaDrop { position: relative; display: inline-block; }
-
-    .media-content {
-      display: none; position: absolute;
-      background-color: #EEEEEE;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-    .media-content a { color: black; padding: 12px 16px; display: block; text-decoration: none; }
-    /* Hovering */
-    .media-content a:hover { background-color: #DDDDDD; }
-    .mediaDrop:hover .media-content { display: block; }
-    .mediaDrop:hover .mediaBut { background-image: linear-gradient(#DAE9FA, #C3D9F3); }
-    
-    /* Links dropdown menu */
-    .linkBut {
-      background-image: linear-gradient(#D2E1F2, #BBD1EB);
-      color: black; padding: 16px; font-size: 16px; min-width: 160px; border: none;
-      font-family: Consolas, monospace;
-      cursor: pointer;
-    }
-    .linkDrop { position: relative; display: inline-block; }
-
-    .link-content {
-      display: none; position: absolute;
-      background-color: #EEEEEE;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-    .link-content a { color: black; padding: 12px 16px; display: block; text-decoration: none; }
-    /* Hovering */
-    .link-content a:hover { background-color: #DDDDDD; }
-    .linkDrop:hover .link-content { display: block; }
-    .linkDrop:hover .linkBut { background-image: linear-gradient(#DAE9FA, #C3D9F3); }
-    
-  </style>
 </head>
 
 <body style="text-align: center;">
 
   <h1>Other Media</h1>
 
-  <hr class="siteSeparator">
-  <div class="mainDrop">
-    <a href="https://DreamyCecil.github.io"><button class="mainBut">Main Page</button></a>
+  <div class="charTopPos">
+    <img src="chill.png" class="charTop">
+    <div class="mainDrop">
+      <a href="https://DreamyCecil.github.io"><button class="mainBut">Main Page</button></a>
+    </div>
   </div>
   
   <div class="samDrop">
@@ -184,9 +38,9 @@
   <div class="mediaDrop">
     <button class="mediaBut">Digital Media</button>
     <div class="media-content">
-      <a href="https://DreamyCecil.github.io/media/videos">Videos</a>
-      <a href="https://DreamyCecil.github.io/media/music">Music</a>
-      <a href="https://DreamyCecil.github.io/media/artwork">Artwork</a>
+      <a href="https://www.youtube.com/user/ST27Production/videos">Videos</a>
+      <a href="https://soundcloud.com/dreamycecil/tracks">Music</a>
+      <a href="https://www.deviantart.com/st27art/gallery/">Artwork</a>
       <a href="https://DreamyCecil.github.io/media/other">Other</a>
     </div>
   </div>
@@ -195,17 +49,15 @@
     <a href="https://DreamyCecil.github.io/links"><button class="linkBut">Links</button></a>
     <div class="link-content">
       <a href="https://www.youtube.com/user/ST27Production">YouTube</a>
-      <a href="https://www.twitch.tv/st27">Twitch</a>
       <a href="https://www.twitter.com/27CrazyWeebs">Twitter</a>
       <a href="https://www.deviantart.com/st27art">DeviantArt</a>
       <a href="https://soundcloud.com/dreamycecil">SoundCloud</a>
       <a href="https://www.redbubble.com/people/27AwesomeThings">RedBubble</a>
-      <a href="https://github.com/DreamyCecil">GitHub</a>
     </div>
   </div>
   <hr class="siteSeparator">
   
-  <div class="siteBlock"><p style="text-align: center"><em>Under construction. Stay tuned.</em></p></div>
+  <div class="siteBlock"><p style="text-align: center;"><em>Under construction. Stay tuned.</em></p></div>
 
 </body>
 </html>
