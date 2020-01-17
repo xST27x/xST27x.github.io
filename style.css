@@ -90,6 +90,14 @@ a:active {
   background-image: linear-gradient(#DAE9FA, #C3D9F3);
 }
 
+/* Gallery Picture */
+.galleryPic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+
 /* Main Page dropdown menu */
 .mainBut {
   background-image: linear-gradient(#D2E1F2, #BBD1EB);
