@@ -57,23 +57,57 @@
   </div>
   <hr class="siteSeparator">
   
-  <div class="siteBlock">
+  <div class="siteBlock" style="">
     <p style="text-align: center; font-size: 32px;"><strong>Run Or Die: Sensitive Task</strong></p>
-    <img src="http://i.imgur.com/oXJeZGU.png" class="galleryPic">
-    <img src="http://i.imgur.com/cPxtuhQ.png" class="galleryPic">
-    <img src="http://i.imgur.com/UMty1iV.png" class="galleryPic">
-    <img src="http://i.imgur.com/X6wVabp.png" class="galleryPic">
-    <img src="http://i.imgur.com/BqIoNHB.png" class="galleryPic">
-    <img src="http://i.imgur.com/fZDbqof.png" class="galleryPic">
+    <div class="imageRow">
+      <div class="oneImage" style="width: 33.33%;"><img src="http://i.imgur.com/oXJeZGU.png" id="picID" class="galleryPic" alt="Rise and shine."></div>
+      <div class="oneImage" style="width: 33.33%;"><img src="http://i.imgur.com/cPxtuhQ.png" id="picID" class="galleryPic" alt="Watch your step."></div>
+      <div class="oneImage" style="width: 33.33%;"><img src="http://i.imgur.com/UMty1iV.png" id="picID" class="galleryPic" alt="Bottomless storage."></div>
+      <div class="oneImage" style="width: 33.33%;"><img src="http://i.imgur.com/X6wVabp.png" id="picID" class="galleryPic" alt="Now all the way to the top!"></div>
+      <div class="oneImage" style="width: 33.33%;"><img src="http://i.imgur.com/BqIoNHB.png" id="picID" class="galleryPic" alt="The pipes seem to be leaking."></div>
+      <div class="oneImage" style="width: 33.33%;"><img src="http://i.imgur.com/fZDbqof.png" id="picID" class="galleryPic" alt="Claustrophobic."></div>
+    </div>
   </div>
     
   <div class="siteBlock">
     <p style="text-align: center; font-size: 32px;"><strong>Railway Depot</strong></p>
-    <img src="http://i.imgur.com/vQSq6xd.png" class="galleryPic">
-    <img src="http://i.imgur.com/mLj8FKH.jpg" class="galleryPic">
-    <img src="http://i.imgur.com/Xd7fsIH.jpg" class="galleryPic">
-    <img src="http://i.imgur.com/OdDNR66.png" class="galleryPic">
+    <div class="imageRow">
+      <div class="oneImage" style="width: 50%;"><img src="http://i.imgur.com/vQSq6xd.png" id="picID" class="galleryPic" alt="First waves."></div>
+      <div class="oneImage" style="width: 50%;"><img src="http://i.imgur.com/mLj8FKH.jpg" id="picID" class="galleryPic" alt="Action."></div>
+      <div class="oneImage" style="width: 50%;"><img src="http://i.imgur.com/Xd7fsIH.jpg" id="picID" class="galleryPic" alt="Now you are all fired!"></div>
+      <div class="oneImage" style="width: 50%;"><img src="http://i.imgur.com/OdDNR66.png" id="picID" class="galleryPic" alt="Final wave."></div>
+    </div>
   </div>
+  
+  <div id="modalOverlay" class="modal">
+    <img class="modalContent" id="modalPic">
+    <div id="modalCaption"></div>
+  </div>
+  
+  <script>
+    // Get the modal
+    var pModal = document.getElementById("modalOverlay");
+
+    // Get the images and insert them inside the modal
+    var aImages = document.getElementsByClassName("galleryPic");
+    
+    for (var iImg = 0; iImg < aImages.length; iImg++) {
+      var pPicture = aImages[iImg];
+      var pModalPic = document.getElementById("modalPic");
+      var pCaption = document.getElementById("modalCaption");
+
+      pPicture.onclick = function(){
+        pModal.style.display = "block";
+        pModalPic.src = this.src;
+        pCaption.innerHTML = this.alt;
+      }
+    }
+
+    // Close the modal
+    pModal.onclick = function() { 
+      pModal.style.display = "none";
+    }
+  </script>
 
 </body>
 </html>
