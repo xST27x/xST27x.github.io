@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="https://DreamyCecil.github.io/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="https://DreamyCecil.github.io/style.css">
+  <title>Serious Files</title>
+</head>
+
+<body style="text-align: center;">
+
+  <h1>Serious Files</h1>
+
+  <div class="charTopPos">
+    <img src="https://DreamyCecil.github.io/chill.png" class="charTop">
+    <div class="mainDrop">
+      <a href="https://DreamyCecil.github.io"><button class="mainBut">Main Page</button></a>
+    </div>
+  </div>
+  
+  <div class="samDrop">
+    <a href="https://DreamyCecil.github.io/sam/files"><button class="samBut">Serious Sam</button></a>
+    <div class="sam-content">
+      <a href="https://DreamyCecil.github.io/sam/files">Files</a>
+      <a href="https://DreamyCecil.github.io/sam/gallery">Gallery</a>
+    </div>
+  </div>
+  
+  <div class="projDrop">
+    <a href="https://DreamyCecil.github.io/projects/files"><button class="projBut">Other Projects</button></a>
+    <div class="proj-content">
+      <a href="https://DreamyCecil.github.io/projects/files">Files</a>
+      <a href="https://DreamyCecil.github.io/projects/gallery">Gallery</a>
+    </div>
+  </div>
+  
+  <div class="mediaDrop">
+    <button class="mediaBut">Digital Media</button>
+    <div class="media-content">
+      <a href="https://www.youtube.com/user/ST27Production/videos">Videos</a>
+      <a href="https://soundcloud.com/dreamycecil/tracks">Music</a>
+      <a href="https://www.deviantart.com/st27art/gallery/">Artwork</a>
+      <a href="https://DreamyCecil.github.io/media/other">Other</a>
+    </div>
+  </div>
+  
+  <div class="linkDrop">
+    <a href="https://DreamyCecil.github.io/links"><button class="linkBut">Links</button></a>
+    <div class="link-content">
+      <a href="https://www.youtube.com/user/ST27Production">YouTube</a>
+      <a href="https://www.twitch.tv/CutieInAHoodie">Twitch</a>
+      <a href="https://www.twitter.com/DaydreamyCutie">Twitter</a>
+      <a href="https://www.deviantart.com/st27art">DeviantArt</a>
+      <a href="https://soundcloud.com/dreamycecil">SoundCloud</a>
+      <a href="https://www.redbubble.com/people/27AwesomeThings">RedBubble</a>
+    </div>
+  </div>
+  <hr class="siteSeparator">
+  
+  <div class="siteBlock">
+    <p style="text-align: center; font-size: 32px;"><strong>Run Or Die: Sensitive Task</strong></p>
+    <p style="font-size: 20px; text-align: center;"><strong style="color: #BBD1EB;">Release date:</strong> 2017-07-24</p>
+    
+    <p>Run Or Die: Sensitive Task is a spin-off of a hardcore map franchise by Ar2R-devil-PiNKy - Run Or Die.</p>
+    <p>You wake up in a strange place and suddenly hear some voice in the head. Is it hallucinations? Or maybe a dream? You can't tell. The only thing you can do is to listen to that voice because he, whoever he is, isn't in a mood for jokes. The voice gives you a simple task. And the point of this task is to escape. But will it be as easy as it seems? You'll find out in Run Or Die: Sensitive Task.</p>
+    <p>The map includes 12 achievements. Can you complete everything? Depends on how thoroughly you explore the map because there's a lot of things that are hidden from the player.</p>
+    
+    <div class="imageRow">
+      <div class="oneImage" style="width: 33.33%;"><img src="https://i.imgur.com/oXJeZGU.png" id="picID" class="galleryPic" alt="Rise and shine."></div>
+      <div class="oneImage" style="width: 33.33%;"><img src="https://i.imgur.com/cPxtuhQ.png" id="picID" class="galleryPic" alt="Watch your step."></div>
+      <div class="oneImage" style="width: 33.33%;"><img src="https://i.imgur.com/UMty1iV.png" id="picID" class="galleryPic" alt="Bottomless storage."></div>
+      <div class="oneImage" style="width: 33.33%;"><img src="https://i.imgur.com/X6wVabp.png" id="picID" class="galleryPic" alt="Now all the way to the top!"></div>
+      <div class="oneImage" style="width: 33.33%;"><img src="https://i.imgur.com/BqIoNHB.png" id="picID" class="galleryPic" alt="The pipes seem to be leaking."></div>
+      <div class="oneImage" style="width: 33.33%;"><img src="https://i.imgur.com/fZDbqof.png" id="picID" class="galleryPic" alt="Claustrophobic."></div>
+    </div>
+    
+    <p style="text-align: center;"><iframe width="720" height="405" src="https://www.youtube.com/embed/0xN2cM_9qtg"></iframe></p>
+    
+    <p style="text-align: center;"><a href="https://yadi.sk/d/l4sUYspX3LKiGp"><button class="downloadBut"><em>Download for SS:SE</em> <strong>(61.6 MB)</strong></button></a>
+    <a href="steam://url/CommunityFilePage/1088909056"><button class="downloadBut"><em>Download for SS:R</em> <strong>(61.7 MB)</strong></button></a></p>
+  </div>
+  
+  <div id="modalOverlay" class="modal">
+    <img class="modalContent" id="modalPic">
+    <div id="modalCaption"></div>
+  </div>
+  
+  <script>
+    // Get the modal
+    var pModal = document.getElementById("modalOverlay");
+
+    // Get the images and insert them inside the modal
+    var aImages = document.getElementsByClassName("galleryPic");
+    
+    for (var iImg = 0; iImg < aImages.length; iImg++) {
+      var pPicture = aImages[iImg];
+      var pModalPic = document.getElementById("modalPic");
+      var pCaption = document.getElementById("modalCaption");
+
+      pPicture.onclick = function(){
+        pModal.style.display = "block";
+        pModalPic.src = this.src;
+        pCaption.innerHTML = this.alt;
+      }
+    }
+
+    // Close the modal
+    pModal.onclick = function() { 
+      pModal.style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
