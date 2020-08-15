@@ -5,61 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/x-icon" href="https://DreamyCecil.github.io/favicon.ico">
   <link rel="stylesheet" type="text/css" href="https://DreamyCecil.github.io/style.css">
-  <title>Serious Files</title>
+  <title>Advanced Multiplayer Mod v1.9</title>
 </head>
 
 <body style="text-align: center;">
 
-  <h1>Serious Files</h1>
-
-  <div class="charTopPos">
-    <img src="https://DreamyCecil.github.io/chill.png" class="charTop">
-    <div class="mainDrop">
-      <a href="https://DreamyCecil.github.io"><button class="mainBut">Main Page</button></a>
-    </div>
-  </div>
-  
-  <div class="samDrop">
-    <a href="https://DreamyCecil.github.io/sam/files"><button class="samBut">Serious Sam</button></a>
-    <div class="sam-content">
-      <a href="https://DreamyCecil.github.io/sam/files">Files</a>
-      <a href="https://DreamyCecil.github.io/sam/gallery">Gallery</a>
-    </div>
-  </div>
-  
-  <div class="projDrop">
-    <a href="https://DreamyCecil.github.io/projects/files"><button class="projBut">Other Projects</button></a>
-    <div class="proj-content">
-      <a href="https://DreamyCecil.github.io/projects/files">Files</a>
-      <a href="https://DreamyCecil.github.io/projects/gallery">Gallery</a>
-    </div>
-  </div>
-  
-  <div class="mediaDrop">
-    <button class="mediaBut">Digital Media</button>
-    <div class="media-content">
-      <a href="https://www.youtube.com/user/ST27Production/videos">Videos</a>
-      <a href="https://soundcloud.com/dreamycecil/tracks">Music</a>
-      <a href="https://www.deviantart.com/st27art/gallery/">Artwork</a>
-      <a href="https://DreamyCecil.github.io/media/other">Other</a>
-    </div>
-  </div>
-  
-  <div class="linkDrop">
-    <a href="https://DreamyCecil.github.io/links"><button class="linkBut">Links</button></a>
-    <div class="link-content">
-      <a href="https://www.youtube.com/user/ST27Production">YouTube</a>
-      <a href="https://www.twitch.tv/CutieInAHoodie">Twitch</a>
-      <a href="https://www.twitter.com/DaydreamyCutie">Twitter</a>
-      <a href="https://www.deviantart.com/st27art">DeviantArt</a>
-      <a href="https://soundcloud.com/dreamycecil">SoundCloud</a>
-      <a href="https://www.redbubble.com/people/27AwesomeThings">RedBubble</a>
-    </div>
-  </div>
-  <hr class="siteSeparator">
+  <h1>Advanced Multiplayer Mod v1.9</h1>
+  <div embed-html="https://DreamyCecil.github.io/top_menu.html"></div>
+  <script src="https://DreamyCecil.github.io/html_embed.js"></script>
   
   <div class="siteBlock">
-    <p style="text-align: center; font-size: 32px;"><strong>Advanced Multiplayer Mod v1.9</strong></p>
     <p style="font-size: 20px; text-align: center;"><strong style="color: #BBD1EB;">Release date:</strong> 2017-12-31</p>
     
     <p>This mod includes a number of features that will improve your multiplayer experience by adding new game options and mutators. This includes:</p>
@@ -110,30 +65,7 @@
     <div id="modalCaption"></div>
   </div>
   
-  <script>
-    // Get the modal
-    var pModal = document.getElementById("modalOverlay");
-
-    // Get the images and insert them inside the modal
-    var aImages = document.getElementsByClassName("galleryPic");
-    
-    for (var iImg = 0; iImg < aImages.length; iImg++) {
-      var pPicture = aImages[iImg];
-      var pModalPic = document.getElementById("modalPic");
-      var pCaption = document.getElementById("modalCaption");
-
-      pPicture.onclick = function(){
-        pModal.style.display = "block";
-        pModalPic.src = this.src;
-        pCaption.innerHTML = this.alt;
-      }
-    }
-
-    // Close the modal
-    pModal.onclick = function() { 
-      pModal.style.display = "none";
-    }
-  </script>
+  <script src="https://DreamyCecil.github.io/picture_overlay.js"></script>
 
 </body>
 </html>
