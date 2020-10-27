@@ -1,3 +1,14 @@
+/* Roboto Fonts */
+@font-face {
+  font-family: Roboto;
+  src: url("roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: RobotoBold;
+  src: url("roboto/Roboto-Bold.ttf");
+}
+
 /* Main */
 body {
   background-color: black;
@@ -6,12 +17,12 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  font-family: Segoe WP SemiLight, sans-serif;
+  font-family: Roboto;
   color: white;
 }
 
 h1 {
-  font-family: Segoe UI, sans-serif;
+  font-family: RobotoBold;
 }
 
 /* Character */
@@ -130,7 +141,7 @@ h1 {
   color: #BBD1EB;
   padding: 10px 0;
   height: 150px;
-  font-family: Segoe WP, sans-serif;
+  font-family: RobotoBold;
   font-size: 36px;
 }
 
@@ -175,7 +186,7 @@ a:active {
   margin-bottom: 8px;
   
   text-align: justify;
-  font-family: Segoe WP SemiLight, sans-serif;
+  font-family: Roboto;
 }
 
 /* Download Button */
@@ -190,7 +201,7 @@ a:active {
   margin-top: 8px;
   
   color: black;
-  font-family: Segoe UI, sans-serif;
+  font-family: Roboto;
   font-size: 20px;
   cursor: pointer;
 }
