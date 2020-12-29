@@ -165,6 +165,19 @@ a:active {
   color: white; background-color: transparent; text-decoration: none;
 }
 
+.accomplishLink:link {
+  color: #4F4F4F; background-color: transparent; text-decoration: none;
+}
+.accomplishLink:visited {
+  color: #4F4F4F; background-color: transparent; text-decoration: none;
+}
+.accomplishLink:hover {
+  color: #7F7F7F; background-color: transparent; text-decoration: underline;
+}
+.accomplishLink:active {
+  color: #3F3F3F; background-color: transparent; text-decoration: none;
+}
+
 .siteSeparator {
   width: 840px;
   margin: auto;
